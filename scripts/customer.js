@@ -12,16 +12,16 @@ var Customer  = function(name,surname,balance,password){
 var ibans = [10000000000,99999999999];
 var customers = [];
 var customer1 = new Customer("Azad","Yıldız",500,123456);
-customer1.iban = "1";
+customer1.iban = "12345678901";
 customers.push(customer1);
-var customer2 = new Customer("Taha","Doğan",1000,123123);
-customer2.iban = "2";
+var customer2 = new Customer("Dr.","Watson",1000,123123);
+customer2.iban = "10987654321";
 customers.push(customer2);
-var customer3 = new Customer("Kaan","Tangöze",1500,654321);
-customer3.iban = "3";
+var customer3 = new Customer("Sherlock","Holmes",1500,654321);
+customer3.iban = "11223344556";
 customers.push(customer3);
-var customer4 = new Customer("Esma","Inan",2000,321321);
-customer4.iban = "4";
+var customer4 = new Customer("Jim","Moriarty",2000,321321);
+customer4.iban = "65544332211";
 customers.push(customer4);
 
 // LOGINED ACC
