@@ -14,7 +14,7 @@ var customers = [];
 var customer1 = new Customer("Azad","Yıldız",500,123456);
 customer1.iban = "12345678901";
 customers.push(customer1);
-var customer2 = new Customer("Dr.","Watson",1000,123123);
+var customer2 = new Customer("John","Watson",1000,123123);
 customer2.iban = "10987654321";
 customers.push(customer2);
 var customer3 = new Customer("Sherlock","Holmes",1500,654321);
