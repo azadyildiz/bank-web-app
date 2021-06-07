@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/loginstyle.css">
+    <title>DAEZZBANK</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="login.html">D A E Z Z <br>B A N K</a>
+        <div class="forlogo"></div>
+        <div class="forlogo2"></div>
+    </div>
+    <div class="loginContainer">
+        <span class="login">Login</span>
+        <label>
+            <span>IBAN</span>
+            <input id="loginIban" maxlength="11" type="text">
+        </label>
+        <label>
+            <span>Password</span>
+            <input id="loginPassword" type="password">
+        </label>
+
+        <button id="loginButton">Login</button>
+        <span id="loginSpan"></span>
+        <div id="loginAnim"></div>
+    </div>
+    
+    <script src="scripts/customer.js"></script>
+    <script src="scripts/login/loginElements.js"></script>
+    <script src="scripts/login/loginController.js"></script>
+    <script src="scripts/login/eventsController.js"></script>
+</body>
+</html>

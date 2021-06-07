@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAEZZBANK</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/indexstyle.css">
 </head>
 <body>
+    <div class="logo">
+        <a href="index.html">D A E Z Z <br>B A N K</a>
+        <div class="forlogo"></div>
+        <div class="forlogo2"></div>
+    </div>
+    <div class="infoContainer">
+        <div class="accInfo">
+            <span class="accNum"></span>
+            <span>Balance</span>
+            <span class="balance"></span>
+        </div>
+        
+        <div class="accAct">
+            <span>Account Activities</span>
+        </div>
+        <div id="step1" class="moneyTransfer">
+            <span>Money Transfer</span>
+            <label>
+                <span class="forTry">IBAN</span>
+                <span class="forIban">TR</span>
+                <input style="border-color: black;" maxlength="11" type="text" name="" id="iban">
+            </label>
+            <label>
+                <span>Transfer To (Name-Surname)</span>
+                <input maxlength="50" type="text" name="" id="accName">
+            </label>
+            <button id="nextButton">Next</button>
+        </div>
     
+        <div id="step2" class="moneyTransfer">
+            <span>Money Transfer</span>
+            <label>
+                <span class="forTry">Amount</span>
+                <span class="forAmount">TL</span>
+                <input style="border-color: black;" maxlength="12" type="text" name="" id="amount">
+            </label>
+            <label>
+                <span>Description (not required)</span>
+                <input maxlength="50" type="text" name="" id="desc">
+            </label>
+            <button id="prevButton">Prev.</button>
+            <button id="confirmButton">Confirm</button>
+        </div>
+    </div>
+    
+    <div class="popupContainer" id="transferPopup">
+        <div class="popupContainerInside">
+            <span>Confirm Transfer</span>
+            <span id="transferPopupDesc"></span>
+            <button id="popupYesButton">Yes</button>
+            <button id="popupNoButton" >No</button>
+        </div>
+    </div>
+
+    <div class="actContainer">
+        <span id="goBackButton"> < Go Back</span>
+    </div>
+
+    <script src="scripts/customer.js"></script>
+    <script src="scripts/index/indexElements.js"></script>
+    <script src="scripts/index/transferController.js"></script>
+    <script src="scripts/index/eventsController.js"></script>
+    <script src="scripts/index/whenloadindex.js"></script>
 </body>
 </html>

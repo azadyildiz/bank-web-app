@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0px;
+    font-size: 25px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    cursor:pointer;
+    background-color: rgba(0,0,0,0.05);
+    margin: 1rem 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.forlogo{
+    position:absolute;
+    top: 2.25rem;
+    left:-0.6rem;
+    width: 3rem;
+    height: 7rem;
+    background-color:#BFBFBF;
+    opacity: .5;
+    z-index: -1;
+}
+.forlogo2{
+    position: absolute;
+    background-color: #D9BC2B;
+    width: 13.95rem;
+    height: 3rem;
+    top: 2.25rem;
+    left: -0.6rem;
+    z-index: -2;
+}
+
+.loginContainer{
+    background-color: rgba(0,0,0,.05);
+    border-radius: .5rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    padding: 2.5rem;
+    position: relative;
+}
+.loginContainer .login{
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+    font-weight: 400;
+    font-size: 2.25rem;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin-bottom: 2rem;
+    
+}
+
+.loginContainer label{
+    display: block;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.loginContainer label span{
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin: 1rem;
+    margin-bottom: .25rem;
+}
+.loginContainer label input{
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    outline: 0px;
+    font-size: 1.25rem;
+    background-color: transparent;
+    display: block;
+    margin: 1rem;
+    margin-top: .25rem;
+    padding: .25rem;
+}
+.loginContainer button{
+    padding: .5rem;
+    float:right;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.loginContainer #loginAnim{
+    width: 0rem;
+    height: .5rem;
+    background-color: transparent;
+    bottom: 0rem;
+    left: 0rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    position: absolute;
+    transition: .5s;
+}
+.loginContainer #loginSpan{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    opacity: 0;
+    transition: .5s;
+}

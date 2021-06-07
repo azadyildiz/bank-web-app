@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0px;
+    font-size: 16px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+.logo{
+    position: relative;
+    cursor:pointer;
+    background-color: rgba(0,0,0,0.05);
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.forlogo{
+    position:absolute;
+    top: 2.25rem;
+    left:-0.6rem;
+    width: 3rem;
+    height: 7rem;
+    background-color:#BFBFBF;
+    opacity: .5;
+    z-index: -1;
+}
+.forlogo2{
+    position: absolute;
+    background-color: #D9BC2B;
+    width: 13.95rem;
+    height: 3rem;
+    top: 2.25rem;
+    left: -0.6rem;
+    z-index: -2;
+}
+
+.infoContainer{
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+.accInfo{
+    background-color: rgba(0,0,0,.05);
+    border-radius: .5rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    width: 20rem;
+}
+.accInfo span{
+    font-weight: 600;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    padding: .5rem;
+}
+span:nth-child(2){
+    margin-top: 1.5rem;
+    font-weight: 200;
+}
+span:nth-child(3){
+    margin-top: -0.5rem;
+    font-weight: 200;
+}
+
+
+.accAct{
+    margin:1rem 0;
+    background-color: rgba(0,0,0,.05);
+    padding: 1rem 0;
+    padding-left: 1rem;
+    border-radius:.25rem;
+    width: 20rem;
+    cursor: pointer;
+}
+.accAct span{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+.moneyTransfer{
+    background-color: rgba(0,0,0,.05);
+    border-radius: .5rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    width: 20rem;
+    padding-bottom: 5rem;
+}
+.moneyTransfer span{
+    font-weight: 600;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+}
+.moneyTransfer label{
+    display: block;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.moneyTransfer label span{
+    font-weight: 600;
+    font-size: .75rem;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin: 1rem;
+    margin-bottom: .25rem;
+}
+.moneyTransfer label input{
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    outline: 0px;
+    font-size: 1rem;
+    background-color: transparent;
+    display: block;
+    margin: 1rem;
+    margin-top: .25rem;
+    padding: .25rem;
+    padding-left: 1.25rem;
+}
+.moneyTransfer input:nth-child(2){
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,1);
+    outline: 0px;
+    font-size: 1rem;
+    background-color: transparent;
+    display: block;
+    margin: 1rem;
+    margin-top: .25rem;
+    padding: .25rem;
+    padding-left: .25rem;
+    padding-right: 1.5rem;
+}
+.moneyTransfer input::placeholder{
+    color: rgba(0,0,0,.5);
+}
+.moneyTransfer label .forIban{
+    font-size: .8rem;
+    position: absolute;
+    top: 1.3rem;
+    left:0rem;
+    color: gray;
+    z-index: -1;
+    margin-top: 0rem;
+}
+.moneyTransfer button{
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    display: block;
+    border: 1px solid black;
+    outline: 0px;
+    padding: .5rem 1rem;
+    margin: 1rem 2rem;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    transition: .5s;
+    float: right;
+}
+#prevButton{
+    float: left;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+#prevButton:hover{
+    background-color: lightgrey;
+}
+#confirmButton{
+    float: right;
+    font-size: 0.8rem;
+}
+.forAmount{
+    font-size: .8rem;
+    position: absolute;
+    top: 0.5rem;
+    left:7.75rem;
+    color: gray;
+    z-index: -1;
+    margin-top: 0rem;
+}
+#amount{
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    outline: 0px;
+    font-size: 1rem;
+    background-color: transparent;
+    display: block;
+    margin: 1rem;
+    margin-top: .25rem;
+    padding: .25rem;
+}
+
+
+.popupContainer{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.popupContainerInside{
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    width: 25rem;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 2.5rem black;
+}
+.popupContainerInside span{
+    font-weight: 600;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    padding: 1rem;
+}
+.popupContainerInside span:nth-child(2){
+    font-weight: 400;
+}
+.popupContainerInside button{
+    background-color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+    width: 5rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    transition: .5s;
+}
+.popupContainerInside button:nth-child(3):hover{
+    background-color: green;
+    border-color: green;
+    transition: .5s;
+    color: white;
+}
+.popupContainerInside button:nth-child(4):hover{
+    background-color: darkred;
+    border-color: darkred;
+    transition: .5s;
+    color: white;
+}
+
+
+.actContainer{
+    width: 25rem;
+    min-height: 5rem;
+    display: none;
+    background-color: rgba(0,0,0,.05);
+    border-radius: .5rem;
+    margin: 1rem 0;
+    position: absolute;
+    top: 25%;
+    left: 200%;
+    transform: translateX(-50%);
+    transition: .5s;
+    opacity: 1;
+}
+.act{
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    background: lightgrey;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    border-radius: .5rem;
+    width: 20rem;
+    line-height: 1.5rem;
+}
+#goBackButton{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+#goBackButton:hover{
+    color: #D9BC2B;
+}
