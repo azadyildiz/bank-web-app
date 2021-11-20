@@ -1,18 +1,18 @@
 # bank-web-app
 TEST ACCOUNTS
 
-1-  12345678901       : IBAN
-    Azad Yıldız       : FULL NAME
-    123456            : PASSWORD
+1-  IBAN        : 12345678901
+    FULL NAME   : Azad Yıldız
+    PASSWORD    : 123456
 
-2-  10987654321       : IBAN
-    John Watson       : FULL NAME
-    123123            : PASSWORD
+2-  IBAN        : 10987654321
+    FULL NAME   : John Watson
+    PASSWORD    : 123123
 
-3-  11223344556       : IBAN
-    Sherlock Holmes   : FULL NAME
-    654321            : PASSWORD
+3-  IBAN        : 11223344556
+    FULL NAME   : Sherlock Holmes
+    PASSWORD    : 654321
 
-4-  65544332211       : IBAN
-    Jim Moriarty      : FULL NAME
-    321321            : PASSWORD
+4-  IBAN        : 65544332211
+    FULL NAME   : Jim Moriarty
+    PASSWORD    : 321321
