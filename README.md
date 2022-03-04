@@ -1,5 +1,6 @@
-## TEST ACCOUNTS
+# Bank App w/ Pure JavaScript
 
+## Test Accounts
 1-  IBAN        : 12345678901
     FULL NAME   : Azad Yıldız
     PASSWORD    : 123456
